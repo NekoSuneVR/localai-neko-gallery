@@ -71,3 +71,18 @@
       uri: "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v2.bin"
   description: |
     Port of OpenAI's Whisper model in C/C++ 
+- !!merge <<: *whisper
+  name: "whisper-medium"
+  license: "MIT"
+  urls:
+    - https://github.com/ggerganov/whisper.cpp
+    - https://huggingface.co/ggerganov/whisper.cpp
+  overrides:
+    parameters:
+      model: ggml-whisper-medium.bin
+  files:
+    - filename: "ggml-whisper-medium.bin"
+      sha256: "6c14d5adee5f86394037b4e4e8b59f1673b6cee10e3cf0b11bbdbee79c156208"
+      uri: "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-medium.bin"
+  description: |
+    Port of OpenAI's Whisper model in C/C++ 
