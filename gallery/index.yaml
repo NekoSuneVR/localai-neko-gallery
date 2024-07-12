@@ -38,7 +38,48 @@
     - filename: ggml-mpt-7b-instruct.bin
       uri: https://gpt4all.io/models/ggml-mpt-7b-instruct.bin
       sha256: 3e55408392233201f7b2a2e2822d3292ff1dcc50ff74c101c2e47342664a9b34
-      
+- !!merge <<: *llama3
+  name: "poppy_porpoise-v0.72-l3-8b-iq-imatrix"
+  urls:
+    - https://huggingface.co/Lewdiculous/Poppy_Porpoise-0.72-L3-8B-GGUF-IQ-Imatrix
+  description: |
+    "Poppy Porpoise" is a cutting-edge AI roleplay assistant based on the Llama 3 8B model, specializing in crafting unforgettable narrative experiences. With its advanced language capabilities, Poppy expertly immerses users in an interactive and engaging adventure, tailoring each adventure to their individual preferences.
+
+    Update: Vision/multimodal capabilities again!
+  icon: https://cdn-uploads.huggingface.co/production/uploads/642265bc01c62c1e4102dc36/Boje781GkTdYgORTYGI6r.png
+  tags:
+    - llm
+    - multimodal
+    - gguf
+    - gpu
+    - llama3
+    - cpu
+    - llava-1.5
+  overrides:
+    mmproj: Llama-3-Update-2.0-mmproj-model-f16.gguf
+    parameters:
+      model: Poppy_Porpoise-0.72-L3-8B-Q4_K_M-imat.gguf
+  files:
+    - filename: Poppy_Porpoise-0.72-L3-8B-Q4_K_M-imat.gguf
+      sha256: 53743717f929f73aa4355229de114d9b81814cb2e83c6cc1c6517844da20bfd5
+      uri: huggingface://Lewdiculous/Poppy_Porpoise-0.72-L3-8B-GGUF-IQ-Imatrix/Poppy_Porpoise-0.72-L3-8B-Q4_K_M-imat.gguf
+    - filename: Llama-3-Update-2.0-mmproj-model-f16.gguf
+      sha256: 1058494004dfa121439d5a75fb96ea814c7a5937c0529998bf2366f2179bb5ba
+      uri: huggingface://Nitral-AI/Llama-3-Update-2.0-mmproj-model-f16/Llama-3-Update-2.0-mmproj-model-f16.gguf
+- !!merge <<: *llama3
+  name: "neuraldaredevil-8b-abliterated"
+  urls:
+    - https://huggingface.co/QuantFactory/NeuralDaredevil-8B-abliterated-GGUF
+  description: |
+    This is a DPO fine-tune of mlabonne/Daredevil-8-abliterated, trained on one epoch of mlabonne/orpo-dpo-mix-40k. The DPO fine-tuning successfully recovers the performance loss due to the abliteration process, making it an excellent uncensored model.
+  icon: https://cdn-uploads.huggingface.co/production/uploads/61b8e2ba285851687028d395/gFEhcIDSKa3AWpkNfH91q.jpeg
+  overrides:
+    parameters:
+      model: NeuralDaredevil-8B-abliterated.Q4_K_M.gguf
+  files:
+    - filename: NeuralDaredevil-8B-abliterated.Q4_K_M.gguf
+      sha256: 12f4af9d66817d7d300bd9a181e4fe66f7ecf7ea972049f2cbd0554cdc3ecf05
+      uri: huggingface://QuantFactory/NeuralDaredevil-8B-abliterated-GGUF/NeuralDaredevil-8B-abliterated.Q4_K_M.gguf
 - &whisper
   ## Whisper
   url: "github:mudler/LocalAI/gallery/whisper-base.yaml@master"
