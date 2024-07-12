@@ -16,16 +16,17 @@
 - &whisper
   ## Whisper
   url: "github:NekoSuneVR/localai-neko-gallery/gallery/whisper-base.yaml@master"
-  name: "whisper-1"
+  name: "whisper-large-v2"
   license: "MIT"
   urls:
     - https://github.com/ggerganov/whisper.cpp
     - https://huggingface.co/ggerganov/whisper.cpp
   overrides:
     parameters:
-      model: ggml-whisper-base.bin
+      model: ggml-whisper-large-v2.bin
   files:
-    - filename: "ggml-whisper-base.bin"
-      sha256: "60ed5bc3dd14eea856493d334349b405782ddcaf0028d4b5df4088345fba2efe"
-      uri: "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.bin"
+    - filename: "ggml-whisper-large-v2.bin"
+      sha256: "9a423fe4d40c82774b6af34115b8b935f34152246eb19e80e376071d3f999487"
+      uri: "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v2.bin"
   description: |
+    Port of OpenAI's Whisper model in C/C++ 
