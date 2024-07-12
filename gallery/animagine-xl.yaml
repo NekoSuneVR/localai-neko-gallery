@@ -3,8 +3,6 @@ name: "animagine-xl"
 
 config_file: |
   backend: diffusers
-  parameters:
-    model: Linaqruf/animagine-xl
   f16: true
   diffusers:
     cuda: true
