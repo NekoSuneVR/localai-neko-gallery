@@ -43,6 +43,48 @@
     - filename: animagine-xl-2.0.safetensors
       uri: huggingface://Linaqruf/animagine-xl-2.0/animagine-xl-2.0.safetensors
       sha256: 5d973c1f8ac15263463a6bb197bb293d479a0c58cb194c712cef3bcabeb680e8
+- name: animagine-xl-3.0
+  icon: https://cdn-uploads.huggingface.co/production/uploads/6365c8dbf31ef76df4042821/FGFZgsqrhOcor5mid5eap.png
+  license: other
+  description: |
+    Animagine XL 3.0 is the latest version of the sophisticated open-source anime text-to-image model, building upon the capabilities of its predecessor, Animagine XL 2.0. Developed based on Stable Diffusion XL, this iteration boasts superior image generation with notable improvements in hand anatomy, efficient tag ordering, and enhanced knowledge about anime concepts. Unlike the previous iteration, we focused to make the model learn concepts rather than aesthetic.
+  urls:
+    - https://huggingface.co/cagliostrolab/animagine-xl-3.0
+  tags:
+    - text-to-image
+    - animagine-xl
+    - python
+    - sd-3
+    - gpu
+  url: "github:NekoSuneVR/localai-neko-gallery/gallery/animagine-xl.yaml@main"
+  overrides:
+    parameters:
+      model: animagine-xl-3.0.safetensors
+  files:
+    - filename: animagine-xl-3.0.safetensors
+      uri: huggingface://cagliostrolab/animagine-xl-3.0/animagine-xl-3.0.safetensors
+      sha256: 1449e5b0b9de87b0f414c5f29cb11ce3b3dc61fa2b320e784c9441720bf7b766
+- name: animagine-xl-3.1
+  icon: https://cdn-uploads.huggingface.co/production/uploads/6365c8dbf31ef76df4042821/sp6w1elvXVTbckkU74v3o.png
+  license: other
+  description: |
+    Animagine XL 3.1 is an update in the Animagine XL V3 series, enhancing the previous version, Animagine XL 3.0. This open-source, anime-themed text-to-image model has been improved for generating anime-style images with higher quality. It includes a broader range of characters from well-known anime series, an optimized dataset, and new aesthetic tags for better image creation. Built on Stable Diffusion XL, Animagine XL 3.1 aims to be a valuable resource for anime fans, artists, and content creators by producing accurate and detailed representations of anime characters.
+  urls:
+    - https://huggingface.co/cagliostrolab/animagine-xl-3.1
+  tags:
+    - text-to-image
+    - animagine-xl
+    - python
+    - sd-3
+    - gpu
+  url: "github:NekoSuneVR/localai-neko-gallery/gallery/animagine-xl.yaml@main"
+  overrides:
+    parameters:
+      model: animagine-xl-3.1.safetensors
+  files:
+    - filename: animagine-xl-3.1.safetensors
+      uri: huggingface://cagliostrolab/animagine-xl-3.1/animagine-xl-3.1.safetensors
+      sha256: e3c47aedb06418c6c331443cd89f2b3b3b34b7ed2102a3d4c4408a8d35aad6b0
 - &llama3
   url: "github:mudler/LocalAI/gallery/llama3-instruct.yaml@master"
   icon: https://cdn-uploads.huggingface.co/production/uploads/642cc1c253e76b4c2286c58e/aJJxKus1wP5N-euvHEUq7.png
