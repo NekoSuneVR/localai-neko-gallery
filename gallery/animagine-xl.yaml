@@ -3,8 +3,8 @@ name: "animagine-xl"
 
 config_file: |
   backend: diffusers
-  f16: true
+  f16: false
   diffusers:
     pipeline_type: StableDiffusionXLPipeline
-    cuda: true
+    cuda: false
     scheduler_type: "euler_a"
