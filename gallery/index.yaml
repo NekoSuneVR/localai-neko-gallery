@@ -17,7 +17,7 @@
   url: "github:NekoSuneVR/localai-neko-gallery/gallery/animagine-xl.yaml@main"
   overrides:
     parameters:
-      model: animagine-xl.safetensors
+      model: Linaqruf/animagine-xl
   files:
     - filename: animagine-xl.safetensors
       uri: huggingface://Linaqruf/animagine-xl/animagine-xl.safetensors
@@ -38,7 +38,7 @@
   url: "github:NekoSuneVR/localai-neko-gallery/gallery/animagine-xl.yaml@main"
   overrides:
     parameters:
-      model: animagine-xl-2.0.safetensors
+      model: Linaqruf/animagine-xl-2.0
   files:
     - filename: animagine-xl-2.0.safetensors
       uri: huggingface://Linaqruf/animagine-xl-2.0/animagine-xl-2.0.safetensors
@@ -59,7 +59,7 @@
   url: "github:NekoSuneVR/localai-neko-gallery/gallery/animagine-xl.yaml@main"
   overrides:
     parameters:
-      model: animagine-xl-3.0.safetensors
+      model: cagliostrolab/animagine-xl-3.0
   files:
     - filename: animagine-xl-3.0.safetensors
       uri: huggingface://cagliostrolab/animagine-xl-3.0/animagine-xl-3.0.safetensors
@@ -80,7 +80,7 @@
   url: "github:NekoSuneVR/localai-neko-gallery/gallery/animagine-xl.yaml@main"
   overrides:
     parameters:
-      model: animagine-xl-3.1.safetensors
+      model: cagliostrolab/animagine-xl-3.1
   files:
     - filename: animagine-xl-3.1.safetensors
       uri: huggingface://cagliostrolab/animagine-xl-3.1/animagine-xl-3.1.safetensors
